@@ -1,0 +1,10 @@
+^E:\CODE_WAREHOUSE\ALICE'S_DOLLS\OPENGLTEST\BUILD\CMAKEFILES\2D102F1EA346487A362DFA3F56FD954C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/Code_Warehouse/Alice's_dolls/OpenGLTest" "-BE:/Code_Warehouse/Alice's_dolls/OpenGLTest/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "E:/Code_Warehouse/Alice's_dolls/OpenGLTest/build/OpenGL_Test.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
